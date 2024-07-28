@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions and answers Hadean Eon</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #35424a;
+        }
+        .question {
+            background: #e4e4e4;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .answer {
+            display: none;
+            background: #d4edda;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .show-answer-btn {
+            background: #35424a;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function toggleAnswer(id) {
+            const answer = document.getElementById(id);
+            if (answer.style.display === "none") {
+                answer.style.display = "block";
+            } else {
+                answer.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Preguntas y Respuestas - Era Hadeana</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <h2>Giovani</h2>
+        <div class="question">
+            <p><strong>1. Which is one of the greatest divisions in history from a geological point of view?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer1')">Mostrar Respuesta</button>
+            <div class="answer" id="answer1">
+                <p>The Hadic eon is one of the greatest divisions in history from a geological point of view.</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>2. In which eon the planet Earth is formed?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer2')">Mostrar Respuesta</button>
+            <div class="answer" id="answer2">
+                <p>The Hadic eon is known for being the eon in which Planet Earth is formed.</p>
+            </div>
+        </div>
+        <!-- Add more questions and answers here for Giovani -->
+    </section>
+
+    <section class="container">
+        <h2>Oscar</h2>
+        <div class="question">
+            <p><strong>1. Where does come from the name of age Hadean?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer3')">Mostrar Respuesta</button>
+            <div class="answer" id="answer3">
+                <p>The name "Hadean" comes from the Greek word "Hades," which referred to the Greek underworld because it is related to a stage of heat and confusion.</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>2. What was the Earth's atmosphere mainly composed of?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer4')">Mostrar Respuesta</button>
+            <div class="answer" id="answer4">
+                <p>Earth's atmosphere consists primarily of carbon dioxide, water vapor, methane, and ammonia.</p>
+            </div>
+        </div>
+        <!-- Add more questions and answers here for Oscar -->
+    </section>
+
+    <section class="container">
+        <h2>Josibeth</h2>
+        <div class="question">
+            <p><strong>1. What did the meteorites that hit the earth bring?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer5')">Mostrar Respuesta</button>
+            <div class="answer" id="answer5">
+                <p>Inside many of the meteorites that impacted the Earth's surface, there were small particles of water.</p>
+            </div>
+        </div>
+        <div class="question">
+            <p><strong>2. How did the earth obtain a primitive atmosphere?</strong></p>
+            <button class="show-answer-btn" onclick="toggleAnswer('answer6')">Mostrar Respuesta</button>
+            <div class="answer" id="answer6">
+                <p>Thanks to the surface temperatures and constant volcanic eruptions, a large amount of gases began to be expelled to the surface, accumulating for millions of years, resulting in a primitive atmosphere.</p>
+            </div>
+        </div>
+        <!-- Add more questions and answers here for Josibeth -->
+    </section>
+</body>
+</html>
